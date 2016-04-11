@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CCSSample</string>
+    <string name="gcm_sender_id">30772841537</string>
+    <string name="certificate">w2cgnLT48UziRJovyNGFv/xQGkAfL4CvlZczEHujPhnRqGzhet9ZH2KSKj3IfBrRPIptkNpp893OEGg1AXiExB81X8JhC+Mv/fqnw3zWs90BXcmDLdfKNUsdwPx09xOqSUj1QQASlnXip/8LgGPMnw==</string>
+</resources>
