@@ -21,7 +21,8 @@ compile 'com.bedigital:ccs-android-client-sdk:1.0.1'
 ```
 
 ## Documentation
-
+* [Getting started](https://github.com/bedigitaldev/ccs-android-sample/wiki/Getting-Started)
+* 
 ## Author
 
 Bedigital Developer | www.bedigital.co.id
