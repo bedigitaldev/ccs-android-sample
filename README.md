@@ -2,6 +2,7 @@
 Cloud Communication Service SDK sample for Android client
 
 ## Download
+[ ![Download](https://api.bintray.com/packages/bedigitaldev/maven/ccs-android-client-sdk/images/download.svg)](https://bintray.com/bedigitaldev/maven/ccs-android-client-sdk/_latestVersion)
 
 Grab via Maven:
 ```xml
