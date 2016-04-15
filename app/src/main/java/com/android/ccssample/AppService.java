@@ -9,8 +9,8 @@ import com.ccs.android.client.Configuration;
 import com.ccs.android.client.service.ClientService;
 
 /**
- * Created by Erry Suprayogi on 24/02/2016.
- * Email erry.suprayogi@gmail.com
+ * Created by Bedigital Developer on 24/02/2016.
+ * Email bedigital.devs@gmail.com
  */
 public class AppService extends ClientService {
 
@@ -18,6 +18,8 @@ public class AppService extends ClientService {
     protected Configuration getConfiguration() {
         Configuration configuration = new Configuration(this)
                 .certificate(getString(R.string.certificate))
+                .enableVoice(true)
+                .enableMessaging(true)
                 .transport(Configuration.TRANSPORT_TLS);
         return configuration;
     }

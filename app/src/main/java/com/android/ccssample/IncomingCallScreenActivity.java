@@ -17,8 +17,8 @@ import com.ccs.android.client.call.CallSession;
 import com.ccs.android.client.call.listener.OnCallStateListener;
 
 /**
- * Created by Erry Suprayogi on 02/10/2015.
- * Email erry.suprayogi@gmail.com
+ * Created by Bedigital Developer on 02/10/2015.
+ * Email bedigital.devs@gmail.com
  */
 public class IncomingCallScreenActivity extends BaseActivity implements OnCallStateListener, ActivityCompat.OnRequestPermissionsResultCallback {
 

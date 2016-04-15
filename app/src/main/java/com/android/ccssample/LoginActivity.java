@@ -16,8 +16,8 @@ import com.ccs.android.client.ErrorType;
 import com.ccs.android.client.call.listener.CallbackResults;
 
 /**
- * Created by Erry Suprayogi on 24/02/2016.
- * Email erry.suprayogi@gmail.com
+ * Created by Bedigital Developer on 24/02/2016.
+ * Email bedigital.devs@gmail.com
  */
 public class LoginActivity extends BaseActivity implements CallbackResults {
 
@@ -91,4 +91,5 @@ public class LoginActivity extends BaseActivity implements CallbackResults {
         mSpinner.setMessage("Please wait...");
         mSpinner.show();
     }
+
 }

@@ -1,8 +1,8 @@
 package com.android.ccssample.gcm;
 
 /**
- * Created by Erry Suprayogi on 01/10/2015.
- * Email erry.suprayogi@gmail.com
+ * Created by Bedigital Developer on 01/10/2015.
+ * Email bedigital.devs@gmail.com
  */
 import android.app.NotificationManager;
 import android.app.PendingIntent;

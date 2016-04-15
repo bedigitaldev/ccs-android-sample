@@ -18,8 +18,8 @@ import com.ccs.android.client.call.CallSession;
 import com.ccs.android.client.call.listener.OnCallStateListener;
 
 /**
- * Created by Erry Suprayogi on 24/02/2016.
- * Email erry.suprayogi@gmail.com
+ * Created by Bedigital Developer on 24/02/2016.
+ * Email bedigital.devs@gmail.com
  */
 public class OutgoingCallScreenActivity extends BaseActivity implements OnCallStateListener {
 
