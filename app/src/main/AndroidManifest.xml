@@ -67,10 +67,10 @@
 
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".OutgoingCallScreenActivity"
+            android:name=".call.OutgoingCallScreenActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".IncomingCallScreenActivity"
+            android:name=".call.IncomingCallScreenActivity"
             android:allowTaskReparenting="true"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -81,6 +81,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".messaging.ChatRoomActivity"
+            android:configChanges="screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

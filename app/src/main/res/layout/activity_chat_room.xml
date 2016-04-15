@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:src="@drawable/ic_avatar"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:scaleType="centerCrop"
+            android:transitionName="contact_picture" />
+
+        <LinearLayout
+            android:id="@+id/name_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:orientation="vertical"
+            android:paddingLeft="6dip">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="Sonosuke Sagara"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:fontFamily="sans-serif-light"
+                android:gravity="top"
+                android:singleLine="true"
+                android:text="Last seen"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/chat_compose_panel"
+        android:layout_below="@+id/toolbar"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/chat_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="#00000000"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:smoothScrollbar="true"
+            android:scrollbarStyle="insideOverlay"
+            android:stackFromBottom="false"
+            android:textFilterEnabled="true" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/alert_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/chat_compose_panel"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/alert_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:scaleType="centerInside"
+            android:text="Error info!"
+            android:textColor="@android:color/white"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/alert_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/clear_button_edit"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_above="@+id/chat_compose_panel"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/chat_compose_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dip"
+        android:background="#77ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:id="@+id/chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/chat_input"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:paddingRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_chat_send_button_states" />
+
+        <EditText
+            android:id="@+id/chat_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@id/chat_send"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Type message"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textNoSuggestions|textCapSentences|textMultiLine"
+            android:maxLength="16384"
+            android:maxLines="4"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:textColorHint="#909090"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

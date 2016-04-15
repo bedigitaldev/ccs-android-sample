@@ -14,7 +14,7 @@
         android:id="@+id/number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Number"/>
+        android:hint="Number" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,16 +23,23 @@
 
         <Button
             android:id="@+id/onetCallBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Onet Call" />
 
         <Button
             android:id="@+id/offnetCallBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Offnet Call" />
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chat" />
     </LinearLayout>
 </LinearLayout>
