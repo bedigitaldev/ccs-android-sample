@@ -25,6 +25,7 @@ compile 'com.bedigital:ccs-android-client-sdk:1.0.1'
 * [Getting started](https://github.com/bedigitaldev/ccs-android-sample/wiki/Getting-Started)
 * [Starting a Client](https://github.com/bedigitaldev/ccs-android-sample/wiki/Starting-a-Client)
 * [Making a Call](https://github.com/bedigitaldev/ccs-android-sample/wiki/Making-a-Call)
+* [Sending a Instant Message](https://github.com/bedigitaldev/ccs-android-sample/wiki/Sending-a-Instant-Message)
 
 ## Author
 
