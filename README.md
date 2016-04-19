@@ -18,7 +18,9 @@ or Gradle:
 repositories {
     maven {url  "http://dl.bintray.com/bedigitaldev/maven" }
 }
-compile 'com.bedigital:ccs-android-client-sdk:1.0.1'
+dependencies {
+    compile 'com.bedigital:ccs-android-client-sdk:1.0.1'
+}
 ```
 
 ## Documentation
