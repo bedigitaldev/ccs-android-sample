@@ -19,7 +19,7 @@ repositories {
     maven {url  "http://dl.bintray.com/bedigitaldev/maven" }
 }
 dependencies {
-    compile 'com.bedigital:ccs-android-client-sdk:1.0.1'
+    compile 'com.bedigital:ccs-android-client-sdk:1.0.2'
 }
 ```
 
