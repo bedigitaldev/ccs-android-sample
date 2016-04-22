@@ -35,7 +35,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 String number = numberText.getText().toString();
-                call = getService().getCallClient(MainActivity.this).onetCall(number, new MyCallListener());
+                call = getService().getCallClient(MainActivity.this).onnetCall(number, new MyCallListener());
             }
         });
 
